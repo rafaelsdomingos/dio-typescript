@@ -8,9 +8,27 @@
     <script src="dist/app.js" defer></script>
 </head>
 <body>
+    <h2>Desafio 3</h2>
     <h4>Valor a ser adicionado: <input id="soma"> </h4>
     <button id="atualizar-saldo">Atualizar saldo</button>
     <button id="limpar-saldo">Limpar seu saldo</button>
-    <h1>Seu saldo é:  <span id="campo-saldo"></span></h1>
+    <h5>Seu saldo é:  <span id="campo-saldo"></span></h5>
+    <hr>
+    <h2> Desafio 4 </h2>
+
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button id="login-button" disabled>Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Escreva...">
+            <button id="search-button">Pesquisar Filme</button>
+        </div>
+      </div>
+
+    <hr>
 </body>
 </html>
